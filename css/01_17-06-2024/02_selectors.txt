@@ -1,0 +1,18 @@
+rules / syntax : 
+inline => 
+    style = "property : value;"
+
+internal / external => 
+selector {
+    property : value;
+}
+
+
+selectors => 
+1. element selector 
+2. class selector 
+3. id selector
+4. group selector 
+5. universal selector 
+6. attribute selector 
+7. combinators
