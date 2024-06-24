@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: auto;
+            width: 300px;
+            padding: 20px;
+            border: 10px solid black;
+            margin: 70px auto;
+
+            /* border-image: url(image/img2.png) 30% / 66px stretch; */
+            /* border-image-source: url(image/img2.png); */
+            border-image-source: linear-gradient(blue, red);
+
+            border-image-slice: 1;
+            border-image-width: 25px;
+            border-image-outset: 2;
+            border-image-repeat: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sed commodi recusandae magni consectetur optio
+        magnam officiis explicabo, veritatis accusantium assumenda repudiandae et quam facere aliquam blanditiis
+        provident laudantium at!
+    </div>
+</body>
+
+</html>
