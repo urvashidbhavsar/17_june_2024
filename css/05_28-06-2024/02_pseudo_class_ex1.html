@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes are start with : sign. */
+        a {
+            text-decoration: none;
+        }
+
+        /* apply on <a> tag */
+        .link1:link {
+            color: blue;
+        }
+
+        .link2:any-link {
+            color: blue;
+        }
+
+        .link4:visited {
+            color: plum;
+        }
+
+        /* apply on <a> or <button> tag */
+        .link3:active {
+            color: coral;
+        }
+
+        /* apply on any block tag, <a> or <button> tag */
+        .link5:hover {
+            color: green;
+        }
+
+        button {
+            padding: 10px 30px;
+            background-color: firebrick;
+            color: white;
+            border: 2px solid firebrick;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: white;
+            color: firebrick;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        input:focus {
+            box-shadow: 0 0 5px 2px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="link1">Click here</a> <br><br>
+    <a href="#" class="link2">Click here</a> <br><br>
+    <a href="#" class="link3">Click here</a> <br><br>
+    <a href="#" class="link4">Click here</a> <br><br>
+    <a href="#" class="link5">Click here</a> <br><br>
+
+    <button>Hover Me!!! to show effect</button> <br><br>
+
+    <input type="text">
+</body>
+
+</html>
