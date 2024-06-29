@@ -1,0 +1,11 @@
+(1) descendent selector 
+    => parent child selection. use space
+
+(2) child selector 
+    => use > sign.
+
+(3) adjacent selector 
+    => use + sign.
+
+(4) siblings selector 
+    => use ~ sign 
