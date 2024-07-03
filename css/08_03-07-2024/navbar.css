@@ -1,0 +1,89 @@
+/* set compulsory */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/* set for all pages */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    margin-left : 70px;
+    margin-right: 70px;
+}
+
+/* ================================ header =========================== */
+header {
+    background-color   : #033b85;
+    /* border-bottom   : 1px solid red; */
+    box-shadow         : 0 2px 5px #033b85;
+}
+
+header .navbar {
+    display    : flex;
+    align-items: center;
+}
+
+header .navbar .logo h1 {
+    color    : white;
+    font-size: 37px;
+}
+
+header .navbar .logo h1 span {
+    color    : #efaa5b;
+    font-size: 7px;
+}
+
+header .navbar .logo {
+    flex: 0.4;
+}
+
+header .navbar .nav {
+    flex           : 2;
+    display        : flex;
+    justify-content: center;
+    padding        : 12px 5px;
+    border-left    : 1px solid white;
+    border-right   : 1px solid white;
+}
+
+header .navbar .contact {
+    flex           : 0.8;
+    padding        : 12px 5px;
+    display        : flex;
+    justify-content: end;
+}
+
+header .navbar .nav ul {
+    display    : flex;
+    gap        : 30px;
+    align-items: center;
+}
+
+header .navbar .contact .call {
+    color: #efaa5b;
+}
+
+header .navbar a {
+    color      : white;
+    font-weight: 500;
+}
+
+header .navbar a:hover {
+    color: #efaa5b;
+}
+
+header .navbar a.active {
+    color: #efaa5b;
+}
