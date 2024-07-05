@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        .container {
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+
+        .gridex .grid-data {
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            align-items: center;
+        }
+
+        .gridex .grid-data img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .gridex .grid-data .title {
+            color: gray;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .gridex .grid-data h1 {
+            font-size: 40px;
+            padding: 10px 0;
+        }
+
+        .gridex .grid-data p {
+            color: gray;
+        }
+
+        .gridex .grid-data .photo-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gridex .grid-data .photo-details .details {
+            padding: 20px;
+        }
+
+        .gridex .grid-data .photo-details .details .icon {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(174, 28, 89);
+            border-radius: 50%;
+            font-size: 25px;
+            display: grid;
+            place-items: center;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .gridex .grid-data .photo-details .details a {
+            color: rgb(174, 28, 89);
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="gridex">
+        <div class="container">
+            <!-- grid -->
+            <div class="grid-data">
+                <div class="grid-info">
+                    <div class="title">CAPTURE LIFE’S MOMENTS CANDIDLY.</div>
+                    <h1>Photography Is Not An Exact Science.</h1>
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel.</p>
+
+
+                    <div class="photo-details">
+                        <div class="details">
+                            <div class="icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div><a href="">Portraits</a></div>
+                            <p>Lorem ipsum viverra feugiat pellen tesque libero.</p>
+                        </div>
+                        <div class="details">
+                            <div class="icon">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </div>
+                            <div><a href="">Portraits</a></div>
+                            <p>Lorem ipsum viverra feugiat pellen tesque libero.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="https://wp.w3layouts.com/pixshot/wp-content/themes/pixshot/assets/images/ab2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

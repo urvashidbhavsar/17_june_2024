@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imageGallery {
+            width: 50%;
+            border: 1px solid black;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        /* for responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image1 {
+            grid-row: 1 / span 2;
+        }
+
+        .image3 {
+            grid-row: 2 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageGallery">
+        <div class="image1">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/11-11-2022/musical-liberty-demo_Free/1061998195/web/assets/images/img1.jpg"
+                alt="">
+        </div>
+        <div class="image2">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/11-11-2022/musical-liberty-demo_Free/1061998195/web/assets/images/img4.jpg"
+                alt="">
+        </div>
+        <div class="image3">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/11-11-2022/musical-liberty-demo_Free/1061998195/web/assets/images/img2.jpg"
+                alt="">
+        </div>
+        <div class="image4">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/11-11-2022/musical-liberty-demo_Free/1061998195/web/assets/images/img3.jpg"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>
