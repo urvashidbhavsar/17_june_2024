@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+            font-size: 25px;
+            margin: 100px auto;
+            /* use transition for smooth move */
+            transition: 1s ease;
+
+            /* scaleX() skewY() skewX() scaleY() translateX() translateY()*/
+            /* transform: scaleX() scaleY() skewX() skewY() translateX() translateY(); */
+            transform: matrix(1, 0, 0, 1, 0, 90);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">Mydiv</div>
+</body>
+
+</html>
