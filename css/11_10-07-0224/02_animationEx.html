@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setDiv {
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            margin-top: 170px;
+            position: relative;
+        }
+
+        .square {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+            z-index: 1;
+            animation: setSquare 3s cubic-bezier(0, 1.4, 0.23, 1.05) infinite;
+        }
+
+        .circle {
+            height: 80px;
+            width: 80px;
+            background-color: red;
+            position: absolute;
+            bottom: 100px;
+            left: 110px;
+            z-index: -1;
+            border-radius: 50%;
+            animation: setCircle 3s cubic-bezier(0, 1.4, 0.23, 1.05) infinite;
+        }
+
+        @keyframes setSquare {
+            0% {
+                transform: translateY(0) scale(1) rotate(0);
+            }
+
+            25% {
+                transform: translateY(-150px) rotate(90deg);
+            }
+
+            50% {
+                transform: translateY(-50px) scale(0.8) rotate(180deg);
+            }
+
+            100% {
+                transform: translateY(0) scaleX(2) scaleY(0.7) rotate(-360deg);
+
+            }
+        }
+
+        @keyframes setCircle {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+
+            25%,
+            50% {
+                transform: translateY(-150px);
+            }
+
+            90%,
+            100% {
+                transform: translateY(35px) scaleX(1.2) scaleY(0.5);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setDiv">
+        <div class="square"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>
