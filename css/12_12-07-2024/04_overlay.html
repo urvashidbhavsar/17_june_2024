@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overlay {
+            width: 500px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 500px;
+            vertical-align: middle;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            background-color: #5f0466;
+            color: white;
+            border: 2px solid #5f0466;
+            box-shadow: 0 0 15px rgb(75, 75, 75);
+            border-radius: 5px;
+        }
+
+        .over-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-content: center;
+            /* background-color: rgb(0, 0, 0, 0.7); */
+            /* transform: scale(0); */
+            transition: 0.5s ease;
+            /* transform-origin: top; */
+        }
+
+        .overlay:hover .over-text {
+            /* transform: scale(1); */
+            background-color: rgb(0, 0, 0, 0.7);
+        }
+
+        .move {
+            transform: translateY(200px);
+            transition: 0.5s ease;
+        }
+
+        .overlay:hover .move {
+            transition-delay: 0.4s;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div>
+            <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/100615/front-view20.jpeg?isig=0&wm=0&q=80" alt="">
+        </div>
+        <div class="over-text">
+            <div class="move">
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
