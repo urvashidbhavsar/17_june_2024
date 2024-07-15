@@ -1,0 +1,13 @@
+set responsive design.
+
+screen = mobile, tablet, monitor, leptop
+
+breakpoints 
+max-width    =  576px   = mobile screen 
+min-width    =  576px   = large mobile screen 
+min-width    =  768px   = tablet screen (medium)
+min-width    =  992px   = large 
+min-width    =  1200    = extra large 
+min-width    =  1400    = extra extra large screen 
+
+use @media rule for responsive.

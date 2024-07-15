@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .navbar {
+            background-color: brown;
+            padding: 10px;
+        }
+
+        .navbar .nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar ul li {
+            padding: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
+        }
+
+        .navbar .dropdown {
+            position: relative;
+        }
+
+        .navbar .dropdown .dropmenu {
+            position: absolute;
+            display: none;
+            background-color: white;
+            padding: 10px;
+            width: 120px;
+            box-shadow: 0 0 5px black;
+            top: 67px;
+            left: 0;
+            border-radius: 5px;
+        }
+
+        .navbar .dropdown:hover .dropmenu {
+            display: block;
+        }
+
+        .navbar .dropdown .dropmenu li {
+            padding: 10px;
+        }
+
+        .navbar .dropdown .dropmenu a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li class="dropdown"><a href="">Service</a>
+                <ul class="dropmenu">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="">Contact</a>
+                <ul class="dropmenu">
+                    <li><a href="">Mobile</a></li>
+                    <li><a href="">Email</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
