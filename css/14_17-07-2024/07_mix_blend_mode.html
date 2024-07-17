@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+        }
+
+        .main div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .div1 {
+            background-color: red;
+        }
+
+        .div2 {
+            background-color: rgb(160, 143, 13);
+            position: absolute;
+            left: -50px;
+            mix-blend-mode: difference;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+</body>
+
+</html>
