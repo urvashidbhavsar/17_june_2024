@@ -1,0 +1,25 @@
+1. add wordpress project/plugin htdocs.
+2. rename wordpress 
+3. open localhost : 
+	http://localhost/dashboard/
+	write a project name of dashboard place.
+	
+	http://localhost/shopping/
+
+3. same as installation process 
+ 	- language selection 
+	- give database name
+	- set username : root 
+	- do not set password and process
+	- run installation 
+		
+4. give username and password.
+
+5. after login 
+- set any theme 
+- add plugins => 1. elementor, 2. disable gutanberg, 3. wooCommerce, 
+- after add plugin active one by one.
+- steps follow as per wooCom show.
+- add products 
+- add categories 
+- customize theme from appereance - customize
