@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var total = 500;
+        document.write("<div>I have a total &#8377;", total, "</div>");
+        // before ES6 version
+        document.write("<div>I have a total &#8377;" + total + "</div>");
+
+        // after ES6 version
+        document.write(`<div>I have a total &#8377; ${total} </div>`);
+    </script>
+</body>
+
+</html>
