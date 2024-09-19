@@ -11,3 +11,9 @@
 9. open both admin.
 10. create a database with any name
 11. go on xampp dashboard and type in url localhost/dashboard insted of localhost/wp_folder_name 
+
+
+Set up theme
+set plugins
+1. elementor
+2. disable gutenburg

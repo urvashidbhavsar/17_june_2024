@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button onclick="check()">click</button> -->
+
+    <!-- 
+        onmousedown = when user press the key
+        onmouseup= when user release the key
+        onmouseenter = when user enter on the parent element
+        onmouseleave = when user leave from the parent element
+        onmousemove = when move the cursor over the page.
+        onmouseout = when user leave from the all element
+        onmouseover = when user enter on the all element
+        onmousewheel = when user scroll the page
+
+        onkeypress = alphabets, enter,numbers, spacebar etc..
+        onkeydown = all key are pressed
+        onkeyup= when user release the key
+
+    -->
+    <div class="parent" onmousewheel="check()">Parent
+        <div class="child">Child</div>
+    </div>
+
+    <input type="text" name="" id="" onkeyup="check()">
+
+    <script>
+        function check() {
+            alert("Event applied")
+        }
+    </script>
+</body>
+
+</html>
