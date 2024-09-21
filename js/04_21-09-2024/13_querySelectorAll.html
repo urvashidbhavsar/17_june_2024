@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        let b = document.querySelectorAll(".box");
+        for (let i = 0; i < b.length; i++) {
+            b[i].innerHTML = "Class selected"
+        }
+    </script>
+
+    <div class="parent">Parent
+        <div class="child">Child</div>
+        <div class="child">Child</div>
+    </div>
+
+    <script>
+        let p = document.querySelectorAll(".parent .child");
+        p[0].style.color = "red"
+        p[1].style.color = "red"
+    </script>
+
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+
+    <script>
+        let head = document.querySelectorAll("h1,h2,h3")
+        for (let index = 0; index < head.length; index++) {
+            head[index].style.color = "green"
+        }
+    </script>
+</body>
+
+</html>

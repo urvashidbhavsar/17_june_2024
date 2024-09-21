@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openPage()">open</button>
+    <button onclick="closePage()">close</button>
+
+    <script>
+        let link = "https://jsonplaceholder.typicode.com/", clink
+        function openPage() {
+            clink = window.open(link, "_blank");
+        }
+        function closePage() {
+            clink.window.close()
+        }
+    </script>
+</body>
+
+</html>
