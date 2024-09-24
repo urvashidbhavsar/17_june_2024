@@ -47,9 +47,8 @@
                 main = document.querySelector(".main")
 
             let input = document.getElementById("addval").value;
-            let url = document.createTextNode(input)
 
-            img.setAttribute("src", url)
+            img.setAttribute("src", input);
             div.setAttribute("class", "image")
             div.append(img)
             main.appendChild(div)
