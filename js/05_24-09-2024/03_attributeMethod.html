@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 15px;
+        }
+
+        .myimg {
+            border: 5px solid darkorange;
+            border-radius: 10px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setimg()">set</button>
+    <button onclick="removeImg()">remove</button>
+    <button onclick="getImg()">get</button>
+
+    <hr>
+    <img src="https://images.pexels.com/photos/863963/pexels-photo-863963.jpeg?cs=srgb&dl=pexels-blaque-x-264516-863963.jpg&fm=jpg"
+        alt="" id="myimg" width="600px">
+
+    <script>
+        function setimg() {
+            let img = document.getElementById("myimg");
+            // img.setAttribute("width", "400px")
+            // img.setAttribute("style", "border:5px solid red;")
+            img.setAttribute("class", "myimg")
+        }
+        function removeImg() {
+            let img = document.getElementById("myimg");
+            img.removeAttribute("class")
+        }
+        function getImg() {
+            let img = document.getElementById("myimg")
+            let source = img.getAttribute("src")
+            alert(source)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        input {
+            width: 500px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="addval" placeholder="Enter URL">
+    <button onclick="addImages()">Add</button>
+    <hr>
+
+    <div class="main">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/863963/pexels-photo-863963.jpeg?cs=srgb&dl=pexels-blaque-x-264516-863963.jpg&fm=jpg"
+                alt="">
+        </div>
+    </div>
+
+    <script>
+        function addImages() {
+            let div = document.createElement("div"),
+                img = document.createElement("img"),
+                main = document.querySelector(".main")
+
+            let input = document.getElementById("addval").value;
+            let url = document.createTextNode(input)
+
+            img.setAttribute("src", url)
+            div.setAttribute("class", "image")
+            div.append(img)
+            main.appendChild(div)
+        }
+    </script>
+</body>
+
+</html>

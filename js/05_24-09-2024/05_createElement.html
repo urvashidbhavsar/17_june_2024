@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            padding-left: 10px;
+        }
+
+        li::marker {
+            content: "\1F40E";
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addList()">Click to Add</button>
+
+    <ul id="list">
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        function addList() {
+            let li = document.createElement("li");
+            let text = document.createTextNode("My new List")
+            li.append(text);
+            document.getElementById("list").appendChild(li)
+        }
+    </script>
+</body>
+
+</html>

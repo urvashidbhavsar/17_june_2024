@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            padding: 10px 0;
+        }
+
+        form {
+            border: 2px solid black;
+            width: fit-content;
+            padding: 30px;
+        }
+
+        .msg {
+            color: red;
+            font-size: 12px;
+            padding-left: 100px;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        .err {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div class="row">
+            <label for="">Enter Name : </label>
+            <!-- onchange="return checkname()" 
+            onkeyup="return checkname()" 
+            -->
+            <input type="text" name="uname" id="user" onblur="return checkname()">
+            <div id="msg" class="msg"></div>
+        </div>
+        <div class="row">
+            <!-- <button onclick="return checkname()">Click</button> -->
+        </div>
+    </form>
+
+    <p>Name : <span id="res"></span></p>
+
+    <script>
+        function checkname() {
+            let n = document.getElementById("user");
+            if (n.value == "") {
+                document.getElementById("msg").innerHTML = "Enter your name";
+                n.classList.add("err")
+                n.focus()
+            } else {
+                document.getElementById("msg").innerHTML = null
+                n.classList.remove("err")
+                document.getElementById("res").innerHTML = n.value
+            }
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>
