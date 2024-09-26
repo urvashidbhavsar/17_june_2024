@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="counting"></div>
+
+    <script>
+        let c = document.getElementById("counting")
+        let start = 0;
+        let count = setInterval(() => {
+            c.innerHTML = ++start;
+            if (start == 200) {
+                clearInterval(count)
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
