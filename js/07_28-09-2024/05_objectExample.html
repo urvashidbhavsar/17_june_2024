@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        img {
+            height: 200px;
+            width: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        var mobile = [
+            {
+                id: 1,
+                image: "https://m.media-amazon.com/images/I/815LfTuu+vL._SX679_.jpg",
+                pname: "Samsung Galaxy M55s 5G (Coral Green,8GB RAM,128GB Storage)",
+                description: "50MP Triple Cam| 5000mAh Battery| Snapdragon 7 Gen 1 | 4 Gen. OS Upgrade & 5 Year Security Update| Super AMOLED+ Display| Without Charger",
+                size: "8GB + 128GB",
+                color: "Coral Green",
+                OriginalP: "28,999",
+                SalePrice: "19,999"
+            },
+            {
+                id: 2,
+                image: "https://m.media-amazon.com/images/I/61WZicN+coL._SX679_.jpg",
+                pname: "iQOO Z9 Lite 5G (Aqua Flow, 4GB RAM, 128GB Storage)",
+                description: "Dimensity 6300 5G | 50MP Sony AI Camera | Charger in The Box | Rs 1000 Off on All Bank Cards",
+                size: " 4GB RAM, 128GB Storage",
+                color: "Aqua Flow",
+                OriginalP: "14,499",
+                SalePrice: "10,498"
+            }
+        ]
+
+        let tdata = document.getElementById("data");
+        for (let i = 0; i < mobile.length; i++) {
+            console.log(mobile[i]);
+            tdata.innerHTML += `
+            <tr>
+                <td>${mobile[i].id}</td>
+                <td><img src='${mobile[i].image}'></td>
+                <td>${mobile[i].pname}</td>
+                <td>${mobile[i].description}</td>
+                <td>${mobile[i].size}</td>
+                <td>${mobile[i].color}</td>
+                <td><s>₹ ${mobile[i].OriginalP} </s> <br>
+                     ₹ ${mobile[i].SalePrice}</td>
+            </tr> `
+        }
+    </script>
+</body>
+
+</html>

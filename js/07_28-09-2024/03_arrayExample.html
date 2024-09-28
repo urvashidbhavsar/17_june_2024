@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        img {
+            height: 200px;
+            max-width: 100%;
+            vertical-align: middle;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+
+    <script>
+        window.addEventListener("load", () => {
+            debugger
+            let m = document.querySelector(".main")
+            let images = [
+                "images/img.jpg", "images/img2.jpg", "images/img3.jpg",
+                "images/img4.jpg", "images/img5.jpg", "images/img6.webp"
+            ];
+
+            for (let i = 0; i < images.length; i++) {
+                console.log(images[i]);
+                m.innerHTML += `
+                        <div class="images">
+                            <img src=${images[i]} alt="">
+                        </div>`
+            }
+        })
+    </script>
+</body>
+
+</html>
