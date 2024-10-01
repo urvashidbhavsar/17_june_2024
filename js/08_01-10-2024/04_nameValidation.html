@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        .row {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <input type="text" name="" id="user" placeholder="Enter name" onblur="return checkname()"
+                onkeyup="return checknameptn()">
+            <div id="msg" class="msg"></div>
+        </div>
+        <div class="row">
+            <input type="text" name="" id="">
+        </div>
+        <div class="row">
+            <button onclick="return checkname()">Click</button>
+        </div>
+    </form>
+
+    <script>
+        function checkname() {
+            let inp = document.getElementById("user");
+            if (inp.value == "") {
+                document.getElementById("msg").innerHTML = "Enter name"
+                inp.classList.add("err")
+            } else {
+                document.getElementById("msg").innerHTML = null
+                inp.classList.remove("err")
+            }
+            return false
+        }
+
+        function checknameptn() {
+            let inp = document.getElementById("user"),
+                ptn = /^[A-Za-z\s]*$/;
+            if (!ptn.test(inp.value)) {
+                document.getElementById("msg").innerHTML = "Invalid name!!!"
+                inp.classList.add("err")
+            } else if (inp.value.length < 6) {
+                document.getElementById("msg").innerHTML = "Name should be more than 5 character"
+                inp.classList.add("err")
+            } else {
+                document.getElementById("msg").innerHTML = null
+                inp.classList.remove("err")
+            }
+            return false
+        }
+
+        var inp = document.querySelectorAll("input[type='text']");
+        inp.forEach(element => {
+            element.addEventListener("input", () => {
+                element.value = element.value.toUpperCase()
+            })
+        });
+    </script>
+</body>
+
+</html>
