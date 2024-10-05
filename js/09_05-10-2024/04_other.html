@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        .row {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            Gender :
+            <input type="radio" name="gen" id="male">
+            <label for="">Male</label>
+            <input type="radio" name="gen" id="female">
+            <label for="">Female</label>
+
+            <span id="msg1" class="msg"></span>
+        </div>
+        <div class="row">
+            Select Area :
+            <input type="checkbox" name="" id="c1">
+            <label for="">North</label>
+            <input type="checkbox" name="" id="c2">
+            <label for="">South</label>
+            <input type="checkbox" name="" id="c3">
+            <label for="">West</label>
+
+            <span id="msg2" class="msg"></span>
+        </div>
+        <div class="row">
+            <select name="city" id="city">
+                <option value="-1">--Select City--</option>
+                <option value="">Surat</option>
+                <option value="">Bharuch</option>
+            </select>
+
+            <span id="msg3" class="msg"></span>
+        </div>
+        <div class="row">
+            Upload
+            <input type="file" name="" id="file">
+            <span id="msg4" class="msg"></span>
+        </div>
+        <div class="row">
+            <button onclick="return validation()">Click</button>
+        </div>
+    </form>
+
+    <script>
+        function validation() {
+            let m = document.getElementById("male"),
+                f = document.getElementById("female"),
+                c1 = document.getElementById("c1"),
+                c2 = document.getElementById("c2"),
+                c3 = document.getElementById("c3"),
+                c = document.getElementById("city"),
+                file = document.getElementById("file")
+
+            if (m.checked == false && f.checked == false) {
+                document.getElementById("msg1").innerHTML = "Select Value !!!"
+            } else if (c1.checked == false && c2.checked == false && c3.checked == false) {
+                document.getElementById("msg2").innerHTML = "Select Value !!!"
+            } else if (c.value == "-1") {
+                document.getElementById("msg3").innerHTML = "Select City !!!"
+            } else if (file.value == "") {
+                document.getElementById("msg4").innerHTML = "Select File"
+            } else {
+                document.getElementById("msg1").innerHTML = null
+                document.getElementById("msg2").innerHTML = null
+                document.getElementById("msg3").innerHTML = null
+                document.getElementById("msg4").innerHTML = null
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>

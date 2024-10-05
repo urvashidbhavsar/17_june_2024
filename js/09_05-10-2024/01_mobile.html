@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
+        .row {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <input type="text" name="" id="num" placeholder="Enter Number" onkeyup="return checknameptn()"
+                oninput="notallowed()" maxlength="10">
+            <div id="msg" class="msg"></div>
+        </div>
+        <div class="row">
+            <!-- <button onclick="return checkname()">Click</button> -->
+        </div>
+    </form>
+
+    <script>
+        function checknameptn() {
+            let inp = document.getElementById("num"),
+                ptn = /^[0-9]*$/, startvalue = /^[6-9]/;
+            if (!ptn.test(inp.value) || !startvalue.test(inp.value)) {
+                document.getElementById("msg").innerHTML = "Invalid Number!!!"
+                inp.classList.add("err")
+            } else if (inp.value.length < 10) {
+                document.getElementById("msg").innerHTML = "Enter 10 Digits"
+                inp.classList.add("err")
+            } else {
+                document.getElementById("msg").innerHTML = null
+                inp.classList.remove("err")
+            }
+            return false
+        }
+        function notallowed() {
+            let inp = document.getElementById("num")
+            inp.value = inp.value.replace(/[a-zA-Z.\W]/, '')
+        }
+    </script>
+</body>
+
+</html>
