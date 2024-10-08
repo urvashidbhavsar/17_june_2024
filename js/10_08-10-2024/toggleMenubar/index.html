@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><i class="fa-brands fa-dribbble"></i>Agreeing</h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">shop</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <button onclick="showDialog('LoginModel')">Login</button>
+                </div>
+                <div class="toggle">
+                    <button onclick="showmenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- model -->
+    <div class="model" id="LoginModel">
+        <div class="title">
+            <h2>Sign in</h2>
+            <div>
+                <button onclick="closeDialog('LoginModel')"><i class="fa-solid fa-close"></i></button>
+            </div>
+        </div>
+        <form action="#">
+            <div class="row">
+                <input type="text" name="" id="" placeholder="Email Address">
+            </div>
+            <div class="row">
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <div class="row">
+                <button>Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

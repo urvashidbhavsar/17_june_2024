@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        form {
+            width: fit-content;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 100px auto;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+            border-right: 0;
+            padding: 5px;
+        }
+
+        .icon {
+            padding: 5px;
+            border: 1px solid gray;
+            border-left: 0;
+            font-size: 13.5px;
+        }
+
+        .icon i {
+            cursor: pointer;
+        }
+
+        .row {
+            padding: 5px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .msg {
+            color: red;
+            font-size: 13px;
+        }
+
+        .err {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="row">
+            <div>
+                <input type="password" name="" id="pass" placeholder="Password">
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-eye" onclick="ShowPassword('pass',this)"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <input type="password" name="" id="cpass" placeholder="Confirm Password">
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-eye" onclick="ShowPassword('cpass',this)"></i>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function ShowPassword(passid, icon) {
+            let pass = document.getElementById(passid);
+            if (pass.type == "password" && icon.classList.contains("fa-eye")) {
+                pass.type = "text"
+                icon.classList.remove("fa-eye")
+                icon.classList.add("fa-eye-slash");
+            } else {
+                pass.type = "password"
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye")
+            }
+        }
+    </script>
+</body>
+
+</html>
