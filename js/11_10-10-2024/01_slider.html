@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            animation: fade 1.5s ease;
+        }
+
+        .Home-sliders {
+            position: relative;
+        }
+
+        .slider {
+            width: 100%;
+            position: absolute;
+        }
+
+        .controls {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            top: 250px;
+            justify-content: space-between;
+        }
+
+        button {
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.557);
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="Home-sliders">
+        <div class="slider">
+            <img src="https://marketplace.canva.com/EAGDYZWPJyc/1/0/1600w/canva-green-and-yellow-simple-nature-lake-desktop-wallpaper-oO_xIwyw0KM.jpg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://marketplace.canva.com/EAFsxtB6cxM/1/0/1600w/canva-blue-night-sky-cute-whale-desktop-wallpaper-eweyyMLqlDU.jpg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://wallpapercave.com/wp/wp8819075.jpg" alt="">
+        </div>
+        <div class="slider">
+            <img src="https://plus.unsplash.com/premium_photo-1697730150275-dba1cfe8af9c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWVzdGhldGljJTIwZGVza3RvcCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://marketplace.canva.com/EAFekpb5NK0/1/0/1600w/canva-dark-modern-photo-mountain-and-sky-desktop-wallpaper-5ixgVU5XGxc.jpg"
+                alt="">
+        </div>
+
+        <div class="controls">
+            <button onclick="change(-1)"><i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button onclick="change(1)"><i class="fa-solid fa-angle-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        var index = 0;
+        function change(x) {
+            index += x
+            slideshow(index)
+        }
+        slideshow(index);
+
+        function slideshow(n) {
+            var slide = document.getElementsByClassName("slider");
+
+            if (n == slide.length) {
+                index = 0;
+                n = 0;
+            }
+            if (n < 0) {
+                index = slide.length - 1;
+                n = slide.length - 1
+            }
+            for (const e of slide) {
+                e.style.display = "none"
+            }
+            slide[n].style.display = "block"
+        }
+
+        
+    </script>
+</body>
+
+</html>
