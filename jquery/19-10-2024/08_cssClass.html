@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+        }
+
+        .div1 {
+            background-color: darkcyan;
+        }
+
+        .div2 {
+            background-color: maroon;
+        }
+
+        .box {
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <button id="btn1">add class</button>
+    <button id="btn2">remove class</button>
+    <button id="btn3">toggle class</button>
+    <button id="btn4">has class</button>
+    <hr>
+
+    <div class="div1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque deserunt aut eum, consequuntur nostrum fuga
+        praesentium sequi, voluptatibus officiis sed dolores perspiciatis rerum voluptates cumque vel laborum nesciunt
+        necessitatibus enim.
+    </div>
+    <div class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa quis praesentium fugit ad?
+        Harum et odit minus facere reprehenderit a minima! Voluptatem voluptas ut quia laborum neque fugit magni?</div>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $(".div1").addClass("box")
+            })
+            $("#btn2").click(function () {
+                $(".div1").removeClass("box")
+            })
+            $("#btn3").click(function () {
+                $(".div2").toggleClass("box")
+            })
+            $("#btn4").click(function () {
+                if ($(".div2").hasClass("box")) {
+                    alert("class exist")
+                } else {
+                    alert("class not exist")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

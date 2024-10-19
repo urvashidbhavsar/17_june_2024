@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: darkcyan;
+        }
+
+        .div2 {
+            height: 100px;
+            width: 100px;
+            background-color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="jquery.js"></script>
+
+    <button id="btn1">slide up</button>
+    <button id="btn2">slide down</button>
+    <button id="btn3">slide toggle</button>
+    <button id="btn4">stop</button>
+    <hr>
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <script>
+        // effected on element height and width
+        $(function () {
+            $("#btn1").click(function () {
+                $(".div1").slideUp(3000)
+            })
+            $("#btn2").click(function () {
+                $(".div1").slideDown(3000)
+            })
+            $("#btn3").click(function () {
+                $(".div2").slideToggle(3000)
+            })
+            $("#btn4").click(function () {
+                $(".div2").stop()
+            })
+        })
+    </script>
+</body>
+
+</html>
