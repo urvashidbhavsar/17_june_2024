@@ -1,0 +1,24 @@
+// create a variable
+@h-auto : auto;
+@w-300: 300px;
+@p-2: 20px;
+@m-2: 20px;
+@solid: solid;
+@b-1: 1px;
+@b-2: 2px;
+
+.mydiv,
+.mydiv1 {
+    height: @h-auto;
+    width: @w-300;
+    padding: @p-2;
+    margin: @m-2;
+}
+
+.mydiv {
+    border: @b-2 @solid saddlebrown;
+}
+
+.mydiv1 {
+    border: @b-2 @solid red;
+}

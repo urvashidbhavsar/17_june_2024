@@ -1,0 +1,63 @@
+// create a variable
+@h-auto : auto;
+@w-300: 300px;
+@p-2: 20px;
+@m-2: 20px;
+@solid: solid;
+@b-1: 1px;
+@b-2: 2px;
+
+// create any random class
+.boxModel {
+    height: @h-auto;
+    width: @w-300;
+    padding: @p-2;
+    margin: @m-2;
+}
+
+.mydiv {
+    .boxModel();
+    border: @b-2 @solid saddlebrown;
+}
+
+.mydiv1 {
+    .boxModel();
+    border: @b-2 @solid red;
+}
+
+.mydiv2 {
+    .boxModel();
+    border: @b-2 dashed magenta;
+}
+
+// ........................................
+.card {
+    display: flex;
+    gap: 20px;
+    padding: @p-2;
+}
+
+img {
+    max-width: 100%;
+}
+
+// create any random class
+.shadow(@sdw: #104982, @sp: 4px) {
+    box-shadow: 0 4px 10px @sp @sdw;
+}
+
+p {
+    padding: @p-2;
+}
+
+.card1 {
+    .shadow()
+}
+
+.card2 {
+    .shadow(#654345, 10px)
+}
+
+.card3 {
+    .shadow(red, 30px)
+}
