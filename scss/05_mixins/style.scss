@@ -1,0 +1,27 @@
+@mixin setbox($bg: #5622aa, $color: white) {
+    background-color: $bg;
+    box-shadow: 0 0 10px rgba($bg, 0.5);
+    color: $color
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+
+    div {
+        height: 100px;
+        width: 100px;
+    }
+
+    .box1 {
+        @include setbox
+    }
+
+    .box2 {
+        @include setbox(#12ffab, crimson)
+    }
+
+    .box3 {
+        @include setbox(#abdddd, black)
+    }
+}

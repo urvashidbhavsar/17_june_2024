@@ -1,0 +1,40 @@
+// create for fixed property value
+%box {
+    height: 150px;
+    width: 150px;
+}
+
+// create for changes in value
+@mixin setbg($bg: salmon) {
+    background-color: $bg;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+
+    .box1 {
+        @extend %box;
+        @include setbg
+    }
+
+    .box2 {
+        @extend %box;
+        @include setbg(blue)
+    }
+
+    .box3 {
+        @extend %box;
+        @include setbg(green)
+    }
+
+    .box4 {
+        @extend %box;
+        @include setbg(pink)
+    }
+
+    .box5 {
+        @extend %box;
+        @include setbg(rgb(203, 88, 26))
+    }
+}

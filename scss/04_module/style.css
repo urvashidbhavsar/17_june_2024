@@ -1,0 +1,12 @@
+.iconBox {
+  height: auto;
+  width: 300px;
+  border: 2px solid black;
+  padding: 20px;
+}
+.iconBox img {
+  width: 100%;
+}
+.iconBox h3 {
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

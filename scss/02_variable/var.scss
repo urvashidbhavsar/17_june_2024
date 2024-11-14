@@ -1,0 +1,12 @@
+$h : auto;
+$w: 40%;
+$space: 20px;
+$border: 2px;
+
+.mydiv {
+    height: $h;
+    width: $w;
+    padding: $space;
+    margin: $space;
+    border: $border solid black;
+}

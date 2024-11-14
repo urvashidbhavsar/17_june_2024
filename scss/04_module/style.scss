@@ -1,0 +1,17 @@
+// import this file
+@use "var";
+
+.iconBox {
+    height: var.$height;
+    width: var.$width-2;
+    border: var.$border solid black;
+    padding: 20px;
+
+    img {
+        width: var.$mw;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}

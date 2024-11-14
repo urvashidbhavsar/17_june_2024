@@ -1,0 +1,24 @@
+.main .box5, .main .box4, .main .box3, .main .box2, .main .box1 {
+  height: 150px;
+  width: 150px;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+.main .box1 {
+  background-color: salmon;
+}
+.main .box2 {
+  background-color: blue;
+}
+.main .box3 {
+  background-color: green;
+}
+.main .box4 {
+  background-color: pink;
+}
+.main .box5 {
+  background-color: rgb(203, 88, 26);
+}/*# sourceMappingURL=style.css.map */

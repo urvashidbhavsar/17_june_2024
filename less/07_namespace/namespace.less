@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bundle() {
+    .button {
+        padding: 15px 30px;
+        font-size: 17px;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+}
+
+.cardDesign {
+    margin: 30px;
+    border: 1px solid lightgray;
+    width: 350px;
+
+    img {
+        width: 300px;
+    }
+
+    .text {
+        padding: 20px;
+
+        .title {
+            font-size: 30px;
+        }
+
+        p {
+            padding: 10px 0;
+        }
+
+        button {
+            #bundle.button();
+            background-color: blue;
+            color: white;
+        }
+    }
+
+    .text1 {
+        button {
+            #bundle.button();
+            background-color: rebeccapurple;
+            color: white
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.list {
+  background-color: saddlebrown;
+}
+.list ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.list ul li {
+  padding: 20px;
+}
+.list ul li a {
+  color: white;
+}/*# sourceMappingURL=nesting.css.map */

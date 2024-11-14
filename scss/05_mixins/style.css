@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  gap: 20px;
+}
+.main div {
+  height: 100px;
+  width: 100px;
+}
+.main .box1 {
+  background-color: #5622aa;
+  box-shadow: 0 0 10px rgba(86, 34, 170, 0.5);
+  color: white;
+}
+.main .box2 {
+  background-color: #12ffab;
+  box-shadow: 0 0 10px rgba(18, 255, 171, 0.5);
+  color: crimson;
+}
+.main .box3 {
+  background-color: #abdddd;
+  box-shadow: 0 0 10px rgba(171, 221, 221, 0.5);
+  color: black;
+}/*# sourceMappingURL=style.css.map */
