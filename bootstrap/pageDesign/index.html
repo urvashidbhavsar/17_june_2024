@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header" class="position-fixed top-0 z-1 bg-white w-100">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h2>
+                        <i class="bi bi-file"></i>Excellence
+                    </h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homenav"
+                    aria-controls="homenav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="icon">
+                    <i class="bi bi-moon"></i>
+                </div> -->
+                <div class="collapse navbar-collapse justify-content-end" id="homenav">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="#">Elements Page</a></li>
+                                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="homepage">
+        <div id="homecarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#homecarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="slider1 slider">
+                        <h5 class="text-white pb-2 text-center">We are Creative</h5>
+                        <p class="display-4 fw-bold text-white pb-2 text-center">World IT Service Company</p>
+                        <p class="text-white pb-2 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ad est laboriosam unde
+                            veritatis at nemo aliquid
+                        </p>
+                        <div class="text-center">
+                            <button class="btn btn-danger btn-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="slider2 slider">
+                        <h5 class="text-white pb-2 text-center">We are Creative</h5>
+                        <p class="display-4 fw-bold text-white pb-2 text-center">World IT Service Company</p>
+                        <p class="text-white pb-2 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ad est laboriosam unde
+                            veritatis at nemo aliquid
+                        </p>
+                        <div class="text-center">
+                            <button class="btn btn-danger btn-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <div class="slider3 slider">
+                        <h5 class="text-white pb-2 text-center">We are Creative</h5>
+                        <p class="display-4 fw-bold text-white pb-2 text-center">World IT Service Company</p>
+                        <p class="text-white pb-2 text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ad est laboriosam unde
+                            veritatis at nemo aliquid
+                        </p>
+                        <div class="text-center">
+                            <button class="btn btn-danger btn-lg">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#homecarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#homecarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="container py-5">
+            <div class="row py-3 g-3 flex-lg-column-reverse flex-xl-row">
+                <div class="col-lg-12 col-xl-6">
+                    <div class="">
+                        <h1 class="pb-2">Best IT Solution Service From Experienced Engineer.</h1>
+                        <p class="text-secondary py-1">
+                            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, sed ultrices in ligula. Semper
+                            at
+                            tempufddfel. Lorem ipsum
+                            dolor sit amet elit. Non quae, fugiat nihil ad.
+                        </p>
+                        <p class="text-secondary py-1">
+                            Pellen tesque libero ut justo, ultrices in ligula. Semper at. Lorem init ipsum dolor sit
+                            amet
+                            elit. Dolor ipsum non
+                            velit, culpa! Pellen tesque libero ut justo, ultrices in ligula amet dolor sit init dolor
+                            sit,
+                            amet elit. Dolor ipsum
+                            non velit, culpa! elit ut et.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-danger btn-lg ">Explore Features</button>
+                            <button class="btn btn-outline-danger btn-lg">View All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <img src="https://t4.ftcdn.net/jpg/06/22/69/19/360_F_622691912_UqnMQAWYxUGeXBmzg2CFUdCCx6MVyG0B.jpg"
+                        alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourDigits bg-body-tertiary">
+        <div class="container py-2 py-sm-2 py-lg-5">
+            <h1 class="text-primary-emphasis text-center mb-4">Some of Our Digital IT Services</h1>
+
+            <div class="row g-3 justify-content-md-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://cdn.lazyshop.com/files/84d84f33-5cbd-4cd2-8c63-4a3789e49cfc/product/2ab4de0c3fe31e46486df4fc8a823119.jpg?x-oss-process=style%2Fthumb"
+                            class="img-fluid" alt="...">
+                        <div class="card-body p-2">
+                            <div class="d-flex align-items-center justify-content-around gap-2">
+                                <div class="icon">
+                                    <i class="bi bi-display fs-3"></i>
+                                </div>
+                                <h5>
+                                    <a href="" class="text-decoration-none">Work Expertise & Leadership</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://cdn.lazyshop.com/files/84d84f33-5cbd-4cd2-8c63-4a3789e49cfc/product/2ab4de0c3fe31e46486df4fc8a823119.jpg?x-oss-process=style%2Fthumb"
+                            class="img-fluid" alt="...">
+                        <div class="card-body p-2">
+                            <div class="d-flex align-items-center justify-content-around gap-2">
+                                <div class="icon">
+                                    <i class="bi bi-display fs-3"></i>
+                                </div>
+                                <h5>
+                                    <a href="" class="text-decoration-none">Work Expertise & Leadership</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://cdn.lazyshop.com/files/84d84f33-5cbd-4cd2-8c63-4a3789e49cfc/product/2ab4de0c3fe31e46486df4fc8a823119.jpg?x-oss-process=style%2Fthumb"
+                            class="img-fluid" alt="...">
+                        <div class="card-body p-2">
+                            <div class="d-flex align-items-center justify-content-around gap-2">
+                                <div class="icon">
+                                    <i class="bi bi-display fs-3"></i>
+                                </div>
+                                <h5>
+                                    <a href="" class="text-decoration-none">Work Expertise & Leadership</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

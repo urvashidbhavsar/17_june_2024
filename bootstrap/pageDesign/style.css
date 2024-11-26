@@ -1,0 +1,36 @@
+.slider {
+    padding: 230px 0;
+}
+
+.slider1 {
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/1080p-Full-HD-Images.jpg) no-repeat center / cover rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+.slider2 {
+    background: url(https://atyabtravels.in/wp-content/uploads/2017/04/HD-wallpapers-1080p-free-download.jpg) no-repeat center / cover rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+.slider3 {
+    background: url(https://live.staticflickr.com/512/19156678806_43aa786da6_h.jpg) no-repeat center / cover rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+@media (max-width:576px) {
+    .slider {
+        padding: 100px 0;
+    }
+}
+
+@media (min-width:576px) {
+    .slider {
+        padding: 150px 0;
+    }
+}
+
+@media (min-width:992px) {
+    .slider {
+        padding: 230px 0;
+    }
+}
