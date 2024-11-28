@@ -17,6 +17,17 @@
     background-blend-mode: multiply;
 }
 
+.list-group-item.active {
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
+}
+
+.list-group-item {
+    text-align: center;
+    border-radius: 10px !important;
+}
+
 @media (max-width:576px) {
     .slider {
         padding: 100px 0;
