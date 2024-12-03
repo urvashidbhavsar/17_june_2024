@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#001122',
+                        crimson: '#dc143c'
+                    }
+                },
+                // add custom font
+                fontFamily: {
+                    sans: "Josefin Sans",
+                },
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container mx-auto py-4 px-4">
+        <!-- predefine class -->
+        <div class="h-auto w-96 p-4 m-4 border-2 border-solid border-lime-800 bg-rose-100 rounded shadow-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea dolor saepe ipsam eveniet reprehenderit
+            illo, ducimus voluptatum cum architecto labore velit fugiat. Quidem cupiditate dolorum iste in doloremque
+            nesciunt?
+        </div>
+        <!-- custom -->
+        <div
+            class="h-auto w-[100%] p-[10px] m-[20px] border-[2px] border-solid border-lime-800 bg-rose-100 rounded-[20px] shadow-xl hover:bg-lime-300 transition hover:text-white md:w-[800px] lg:w-[500px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ea dolor saepe ipsam eveniet reprehenderit
+            illo, ducimus voluptatum cum architecto labore velit fugiat. Quidem cupiditate dolorum iste in doloremque
+            nesciunt?
+        </div>
+    </div>
+</body>
+
+</html>
